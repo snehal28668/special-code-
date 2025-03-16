@@ -1,0 +1,99 @@
+/* General styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container that holds the content */
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title style */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for file input */
+#imageInput {
+  margin: 20px 0;
+}
+
+/* Button styles */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Gallery layout */
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Individual image styles in the gallery */
+#gallery img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Folder layout */
+#folders {
+  margin-top: 30px;
+}
+
+.folder {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+.folder h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Folder images */
+.folder img {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Style for duplicate images */
+#gallery img[style*="border: 2px solid red"] {
+  border: 2px solid red;
+}

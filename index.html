@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Sorter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Image Sorter</h1>
+        <input type="file" id="imageInput" multiple accept="image/*">
+        <button onclick="organizeIntoFolders()">Organize into Folders</button>
+        <button onclick="checkForDuplicates()">Check for Duplicates</button>
+        <div class="gallery" id="gallery"></div>
+        <div id="folders"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
